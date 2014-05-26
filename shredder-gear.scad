@@ -27,7 +27,7 @@ module outer_gear() {
     );
 }
 
-rotate ([0, 45 + 90, 0]) {
+rotate ([0, 45, 0]) {
     translate([0, 0, 7.9]) inner_gear();
     outer_gear();
 }
