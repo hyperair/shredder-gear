@@ -1,3 +1,5 @@
 *.dxf
 *.stl
 *.scaddeps
+*.gcode
+*.x3g
