@@ -11,6 +11,7 @@ module inner_gear() {
         number_of_teeth = 7,
         circular_pitch = 11.5 * 180 / 6,
         gear_thickness = 10.1,
+        rim_thickness = 10.1,
         hub_diameter = 0,
         bore_diameter = 7
     );
