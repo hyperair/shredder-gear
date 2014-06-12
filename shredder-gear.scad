@@ -31,7 +31,16 @@ module outer_gear() {
     );
 }
 
-rotate ([0, 45, 0]) {
-    translate([0, 0, 7.9]) inner_gear();
-    outer_gear();
+difference () {
+    union () {
+        translate([0, 0, 7.9]) inner_gear();
+        outer_gear();
+    }
+
+    translate ([0, -0.1])
+    for (tooth = [0:7]) {
+        rotate ([0, 0, 360 / 7 * tooth])
+        translate ([6, 0, -0.1])
+        cylinder (d=1, h=100);
+    }
 }
