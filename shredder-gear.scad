@@ -6,7 +6,6 @@ $fs = 0.2;
 function convert_circular_pitch (circular_pitch) = circular_pitch * 180 / PI;
 
 module inner_gear() {
-    rotate([0, 0, 22])
     gear(
         number_of_teeth = 7,
         circular_pitch = 11.5 * 180 / 6,
