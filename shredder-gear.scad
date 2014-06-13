@@ -39,7 +39,7 @@ difference () {
     translate ([0, -0.1])
     for (tooth = [0:7]) {
         rotate ([0, 0, 360 / 7 * tooth])
-        translate ([5, 0, -0.1])
+        translate ([6, 0, -0.1])
         cylinder (d=1, h=100);
     }
 }
