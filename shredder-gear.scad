@@ -1,6 +1,5 @@
 use <MCAD/involute_gears.scad>
 
-$fa = 1;
 $fs = 0.2;
 
 function convert_circular_pitch (circular_pitch) = circular_pitch * 180 / PI;
