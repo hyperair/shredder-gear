@@ -20,7 +20,7 @@ lower_gear_thickness = 4;
 lower_gear_hub_thickness = 8;
 lower_gear_hub_diameter = 18;
 lower_gear_rim_thickness = 8;
-lower_gear_rim_width = 2;
+lower_gear_rim_width = 2.5;
 lower_gear_circles = 8;
 
 bore_diameter = 6.3;
