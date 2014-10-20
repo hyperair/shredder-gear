@@ -1,4 +1,5 @@
-use <MCAD/involute_gears.scad>
+use <MCAD/gears/involute_gears.scad>
+use <MCAD/shapes/polyhole.scad>
 
 $fs = 0.2;
 
