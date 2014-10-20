@@ -6,14 +6,14 @@ pin_diameter = 1.1;
 pin_distance_from_center = 5;
 
 upper_gear_teeth = 7;
-upper_gear_cp = 5.2;
+upper_gear_cp = 6;
 upper_gear_thickness = 10;
 upper_gear_rim_thickness = 10;
 upper_gear_hub_diameter = 0;
 upper_gear_circles = 0;
 
 lower_gear_teeth = 26;
-lower_gear_cp = 4.97;
+lower_gear_cp = 4.7;
 lower_gear_thickness = 4;
 lower_gear_hub_thickness = 8;
 lower_gear_hub_diameter = 18;
