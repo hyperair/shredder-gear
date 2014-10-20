@@ -8,8 +8,9 @@ pin_distance_from_center = 5;
 upper_gear_teeth = 7;
 upper_gear_cp = 6;
 upper_gear_thickness = 10;
-upper_gear_rim_thickness = 10;
-upper_gear_hub_diameter = 0;
+upper_gear_rim_thickness = upper_gear_thickness;
+upper_gear_hub_thickness = upper_gear_thickness + 2.5;
+upper_gear_hub_diameter = 18;
 upper_gear_circles = 0;
 
 lower_gear_teeth = 26;
@@ -36,6 +37,7 @@ difference () {
             gear_thickness = upper_gear_thickness + 0.1,
             rim_thickness = upper_gear_rim_thickness + 0.1,
             hub_diameter = upper_gear_hub_diameter,
+            hub_thickness = upper_gear_hub_thickness,
             circles = upper_gear_circles,
             bore_diameter = bore_diameter
         );
