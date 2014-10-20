@@ -56,7 +56,7 @@ difference () {
         );
     }
 
-    translate ([0, -0.1])
+    *translate ([0, -0.1])
     for (tooth = [0:upper_gear_teeth]) {
         rotate ([0, 0, 360 / upper_gear_teeth * tooth])
         translate ([pin_distance_from_center, 0, -0.1])
