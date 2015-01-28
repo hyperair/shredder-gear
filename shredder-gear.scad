@@ -60,14 +60,14 @@ difference () {
     for (tooth = [0:upper_gear_teeth]) {
         rotate ([0, 0, 360 / upper_gear_teeth * tooth])
         translate ([pin_distance_from_center, 0, -0.1])
-        polyhole (d=pin_diameter, h=1000);
+        mcad_polyhole (d=pin_diameter, h=1000);
     }
 
     translate ([0, 0, -0.1])
-    polyhole (d=bore_diameter,
+    mcad_polyhole (d=bore_diameter,
         h=upper_gear_hub_thickness + lower_gear_hub_thickness + 0.2);
 
     translate ([0, 0, upper_gear_rim_thickness + lower_gear_hub_thickness])
-    polyhole (d=stepped_bore_diameter,
+    mcad_polyhole (d=stepped_bore_diameter,
         h=upper_gear_hub_thickness);
 }
