@@ -54,6 +54,10 @@ difference () {
             bore_diameter = bore_diameter,
             circles = lower_gear_circles
         );
+
+        // stress relief
+        translate ([0, 0, lower_gear_hub_thickness])
+        cylinder (d1 = lower_gear_hub_diameter, d2 = 0, h = 3);
     }
 
     *translate ([0, -0.1])
