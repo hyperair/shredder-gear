@@ -1,7 +1,8 @@
 use <MCAD/gears/involute_gears.scad>
 use <MCAD/shapes/polyhole.scad>
 
-$fs = 0.2;
+$fs = 0.4;
+$fa = 1;
 
 pin_diameter = 1.1;
 pin_distance_from_center = 5;
