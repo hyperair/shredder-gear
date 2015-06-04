@@ -8,8 +8,8 @@ pin_diameter = 1.1;
 pin_distance_from_center = 5;
 
 upper_gear_teeth = 7;
-upper_gear_thickness = 10;
 upper_gear_cp = 6;
+upper_gear_thickness = 14;
 upper_gear_rim_thickness = upper_gear_thickness;
 upper_gear_hub_thickness = upper_gear_thickness + 2.5;
 upper_gear_hub_diameter = 18;
@@ -18,7 +18,7 @@ upper_gear_circles = 0;
 lower_gear_teeth = 26;
 lower_gear_cp = 4.95;
 lower_gear_thickness = 4;
-lower_gear_hub_thickness = 8;
+lower_gear_hub_thickness = lower_gear_thickness + 2;
 lower_gear_hub_diameter = 18;
 lower_gear_rim_thickness = 8;
 lower_gear_rim_width = 2.5;
@@ -47,7 +47,7 @@ difference () {
         gear (
             number_of_teeth = lower_gear_teeth,
             circular_pitch = convert_circular_pitch (lower_gear_cp),
-            gear_thickness = lower_gear_thickness + 0.1,
+            gear_thickness = lower_gear_thickness,
             hub_diameter = lower_gear_hub_diameter,
             hub_thickness = lower_gear_hub_thickness,
             rim_thickness = lower_gear_rim_thickness,
@@ -58,7 +58,8 @@ difference () {
 
         // stress relief
         translate ([0, 0, lower_gear_hub_thickness])
-        cylinder (d1 = lower_gear_hub_diameter, d2 = 0, h = 3);
+        cylinder (d1 = lower_gear_hub_diameter, d2 = 0,
+            h = 3 + lower_gear_rim_thickness - lower_gear_hub_thickness);
     }
 
     *translate ([0, -0.1])
