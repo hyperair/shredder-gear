@@ -9,7 +9,7 @@ pin_distance_from_center = 5;
 
 upper_gear_teeth = 7;
 upper_gear_cp = 6;
-upper_gear_thickness = 14;
+upper_gear_thickness = 12;
 upper_gear_rim_thickness = upper_gear_thickness;
 upper_gear_hub_thickness = upper_gear_thickness + 2.5;
 upper_gear_hub_diameter = 18;
